@@ -4,6 +4,7 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     margin-bottom: 0;
     z-index: 0;
+    transition: 0.5s;
 }
 
 #content{
@@ -32,9 +33,11 @@ body{
 }
 
 #header{
+    display: block;
     display: flex;
     border-bottom: 3px solid grey;
     position: sticky;
+
 
 }
 
@@ -201,4 +204,134 @@ body{
 
 .linkContainers{
     text-align: center;
+}
+
+iframe{
+    width: 100%;
+    height: 1500px;
+}
+
+#mobileHeader{
+    display: none;
+}
+
+#mobileHeaderOpen{
+    display: none;
+}
+@media only screen and (orientation: portrait){
+    #content{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .flexContainer{
+        flex-direction: column;
+    }
+
+    .indivFlexContainer{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    .sectionTitle{
+        font-weight: bold;
+    }
+
+    #title{
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 8vw;
+    }
+
+    #subtitle{
+        margin-left: 10%;
+        margin-right:10%;
+        font-size: 5vw;
+    }
+
+    #mobileHeader{
+        display: block;
+        display: flex;
+        border-bottom: 2px solid black;
+        /*position: fixed;*/
+    }
+
+    #header{
+        display: none;
+    }
+
+    #menu{
+        font-size: 175%;
+        margin-left: 6%;
+        margin-top: 0;
+        color: white;
+        background-color: purple;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border: 1px solid purple;
+        transition: 0.7s;
+    }
+
+    #menu:hover{
+        border: 1px solid purple;
+        color: purple;
+        background-color:whitesmoke;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+
+    #icon{
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
+
+    #mobileHeaderOpen{
+        display: block;
+        background-color:  #ffb700;
+        border-left: 4px solid white;
+        border-right: 4px solid white;
+        border-bottom: 4px solid white;
+        position: absolute;
+        z-index: 2;
+        width: 93%;
+        border-top: 2px solid purple;
+        display: none;
+    }
+
+    .mobileLinks{
+        font-size: 175%;
+        padding: 5%;
+        color: white;
+        text-decoration: none;
+    }
+    .headerLinkHolder{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .headerLinkHolder:hover{
+        background-color: purple;
+    }
+
+    .mobileLinks:hover{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    #mobileMenu{
+        font-size: 200%;
+        text-decoration: underline;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        
+    }
 }

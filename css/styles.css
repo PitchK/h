@@ -197,7 +197,8 @@ body{
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
-    margin-bottom: 5%;
+    margin-bottom: 0;
+    padding-bottom: 0;
     font-size: 125%;
     
 }
@@ -306,9 +307,9 @@ iframe{
     }
 
     #subtitle{
-        margin-left: 10%;
-        margin-right:10%;
-        font-size: 4vw;
+        margin-left: 2.5%;
+        margin-right:2.5%;
+        font-size: 5vw;
         margin-bottom: 4%;
     }
 
@@ -407,10 +408,6 @@ iframe{
         
     }
 
-    #subtitle{
-        font-size: 110%;
-    }
-
     .sectionTitle{
         font-size: 135%;
     }
@@ -421,5 +418,45 @@ iframe{
 
     #title{
         margin-bottom: 2%;
+    }
+
+    .modelTitle{
+        font-size: 6vw;
+    }
+
+    .modelTitleDescription{
+        height: auto;
+        padding-bottom:0;
+        margin-bottom: 0;
+        font-size: 4.25vw;
+    }
+
+    .difficulty{
+        font-size: 5vw;
+    }
+
+    .difficultyVisual{
+        font-size: 5vw;
+        width: 90%;
+    }
+
+    .flexDifficulty{
+        width: 80%;
+    }
+
+    .watchLink{
+        font-size: 5vw;
+    }
+
+    .ninjastar{
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+    }
+
+    .linkContainers{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }

@@ -19,4 +19,10 @@ function show(){
     }
 }
 
+var database = [{model: 'The AirPoint\'21', difficulty: '4.5'}]
+
 document.getElementById('menu').addEventListener('click', show);
+var listOfDifficulties = [5.5, 7.5, 5, 8.5, 7, 4.5];
+for (var i = 0; i < document.getElementsByClassName('difficultyVisual').length; i++){
+    document.getElementsByClassName('difficultyVisual')[i].style.background = 'linear-gradient(to right, #42aaf5 0%, #42aaf5 ' + listOfDifficulties[i]*10 + '%, lightgrey ' + listOfDifficulties[i]*10 +'%, lightgrey 100%)';
+}

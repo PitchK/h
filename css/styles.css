@@ -48,7 +48,7 @@ body{
 #header{
     display: block;
     display: flex;
-    border-bottom: 3px solid grey;
+    border-bottom: 3px solid orange;
     margin-bottom: 0;
 }
 
@@ -289,7 +289,167 @@ iframe{
 #mobileHeaderOpen{
     display: none;
 }
+
+#searchbar{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+#search{
+    width: 85%;
+    font-size: 125%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+#find{
+
+    background-color: orange;
+    color: white;
+
+    font-size: 125%;
+    height: 45px;
+
+    width: 100%;
+    margin: auto;
+}
+
+#outergo{
+    width: 15%;
+    background-color: orange;
+    height: 45px;
+}
+
+#outergo:hover{
+    background-color: #ffbf00;
+    cursor: pointer;
+}
+
+#wantToExplore{
+    font-size: 175%;
+    text-align: center;
+}
+
+.exploreLinks{
+    font-size: 155%;
+    color: orange;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#exploreLinkHolder{
+    text-align: center;
+}
+/*footer*/
+#bottom{
+    background-color: orange;
+    color: white;
+    margin-top: 5%;
+    
+}
+
+.bottomLinks{
+    font-size: 110%;
+    color: white;
+
+}
+
+#bottomLinkHolder{
+    justify-content: center;
+    display: flex;
+    color: white;
+
+}
+
+.indivBottomLinkHolder{
+    margin-left: 3%;
+    margin-right: 3%;
+    color: white;
+    font-size: 135%;
+    text-decoration: none;
+}
+
+#credit{
+    font-size: 135%;
+    background-color: lightgrey;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 3%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#bottomIconHolder{
+    margin-left: 12%;
+    padding-top: 2%;
+    margin-bottom: 2%;
+}
+
+#bottomcaption{
+    margin-left: 12%;
+    font-size: 125%;
+    margin-right: 12%;
+}
+
+#bottomIcon{
+    font-weight: bold;
+    font-size: 200%;
+    text-decoration: none;
+    color: purple;
+    
+}
+
+#bottomCaption{
+    margin-left: 12%;
+    font-size: 125%;
+    margin-right: 12%;
+}
+
+/*End of footer*/
+
+
 @media only screen and (orientation: portrait){
+    #credit{
+        font-size: 85%;
+        background-color: lightgrey;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 3%;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    
+    #bottomIconHolder{
+        font-size: 80%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #bottomCaption{
+        font-size: 85%;
+        text-align: center;
+    }
+
+    #bottomLinkHolder{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .indivBottomLinkHolder{
+        margin-left: 3%;
+        margin-right: 3%;
+        color: white;
+        font-size: 90%;
+        text-decoration: none;
+        text-align: center;
+    }
+
     #content{
         width: 95%;
         margin-left: 2.5%;
